@@ -1,0 +1,138 @@
+html,body{
+  font-family: Roboto, Arial;
+  margin: 0;
+  padding: 0;
+  min-height:100vh;
+}
+
+  .header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 2px;
+    width: 100%;
+    height:70px; 
+    background-color: rgb(60, 196, 250);
+}
+
+.header-left-section{
+  display:flex;
+  flex-direction: row;
+}
+
+.company-logo-image{
+  width:100%;
+  max-width:200px;
+  min-width: 100px;
+  height:auto;
+  border:none;
+  image-rendering: optimizeQuality;
+  background-color: transparent;
+  cursor:pointer;
+}
+
+.middle-section{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  width:600px;
+}
+
+
+.search-button-header{
+  width:100%;
+  max-width:42px;
+  background-color:rgb(255, 247, 247);
+  border:none;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgb(126, 126, 131);
+  border-radius: 0 40px 40px 0;
+}
+
+.search-bar-header{
+  font-family:Roboto;
+  font-size:18px;
+  color:rgb(60,60,60);
+  border:none;
+  box-shadow: 1px 1px 5px rgb(69, 69, 71);
+  padding:10px 20px 10px 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  min-width: 0px;
+  border-radius: 40px 0 0 40px;
+}
+
+.search-bar-header:hover{
+  opacity:0.9;
+}
+
+
+.header-right-section{
+ display:flex;
+ flex-direction: row;
+  align-items: center;
+  margin-right:30px
+}
+
+.header-p-menu{
+  display:flex;
+  flex-direction: row;
+  margin-right: 50px;
+  cursor:pointer;
+  font-family: Roboto;
+  font-size:18px;
+}
+
+nav ul{
+  width:100%;
+  list-style: none;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+
+nav a{
+  height:50px;
+  padding:30px;
+  text-decoration: none;
+  display:flex;
+  align-items: center;
+}
+
+nav a:hover{
+  opacity:0.8;
+}
+
+.sidebar-navigation{
+  position:fixed;
+  top:0;
+  right:0;
+  height:100vh;
+  width:250px;
+  z-index:999;
+  background-color: rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:flex-start;
+}
+
+.sidebar li{
+  width:100%;
+}
+
+.sidebar a{
+  width:100%;
+}
+
+.menu-icon-image{
+  width:100%;
+  max-width: 26px;
+}
