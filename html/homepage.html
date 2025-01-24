@@ -8,45 +8,200 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="../css/homepage.css">
+<link rel="stylesheet" href="../css/homepage-header.css">
+<link rel="stylesheet" href="../css/products.css">
 </head>
 <body>
-  <div class="header">
+  <header class="header">
     <div class="header-left-section">
       <img class="company-logo-image" src="../icons/company-logo-removebg-preview.png" alt="Company Logo">
     </div>
     <div class="middle-section">
       <input class="search-bar-header" type="text" placeholder="Search">
-      <img src="../icons/—Pngtree—vector search icon_3783210.png" class="search-button-header">
-     </div>
+      <img src="../icons/—Pngtree—vector search icon_3783210.png" class="search-button-header" alt="Search Icon">
+    </div>
     <div class="header-right-section">
-     <nav>
-      <ul class="sidebar-navigation">
-       <li><a href="">Home</a></li>
-       <li><a href="">Shop</a></li>
-       <li><a href="">Blog</a></li>
-       <li><a href="">About</a></li>
-       <li><a href="">Login</a></li>
-      </ul>
-
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Shop</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contacts</a></li>
-        <li class="show-Menu-Icon"><a href=""><img class="menu-icon-image"src="../icons/menu-bar.png"></a></li>
-       </ul>
-     </nav>
+      <nav>
+        <ul class="menu-js-list">
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="mini-header">
+    <button type="button" class="scroll-btn left-btn">&lt;</button>
+    <div class="scroll-container">
+      <div class="scroll-content">
+        <div class="scroll-header-products">Mens Shoes</div>
+        <div class="scroll-header-products">Cargo pants</div>
+        <div class="scroll-header-products">Electronics</div>
+        <div class="scroll-header-products">Sound systems</div>
+        <div class="scroll-header-products">Bicycles</div>
+        <div class="scroll-header-products">Toys</div>
+      </div>
+    </div>
+    <button type="button" class="scroll-btn right-btn">&gt;</button>
+    <div class="mini-header-right-section-login-cart">
+      <img class="shopping-cart-trolley-img" src="../icons/shopping-cart-no-background.png" alt="Shopping Cart" title="Cart content">
+      <img class="saved-products-later-viewing" src="../icons/save-icon.png" alt="Saved Products" title="Saved Products">
+      <img src="../icons/orders.png" class="ordered-items-view-css" alt="Order Tracking" title="Order Tracking">
+      <button class="button-login-css buttton-login-js" title="Login to your account">Login</button>
     </div>
   </div>
-  <div class="div">
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
+
+ <!--The products section starts here -->
+ <div class="all-products-container">
+  <!-- Product 1 -->
+  <div class="product-container">
+    <div>
+      <img src="../products/vintage radio casette.png" alt="vintage radio casette" class="product-image">
+    </div>
+    <div class="product-details">
+      <div class="product-name">Vintage radio player</div>
+      <div class="price-container">
+        <div class="price-before">Ksh 2500</div>
+        <div class="price-now">Ksh 1999</div>
+      </div>
+      <div class="items-left">2 items left in stock</div>
+      <div class="product-rating">
+        <img src="../icons/cropped-five star rating sign_8240251 (1).png" alt="rating" class="rating-stars">
+        <div class="rating-number">5 stars</div>
+      </div>
+      <div class="cart-actions">
+        <select class="quantity-selector">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
   </div>
+
+  <!-- Second-product -->
+  <div class="product-container">
+    <div>
+      <img src="../products/Black and red headsets.png" alt="Black and Red headsets" class="product-image">
+    </div>
+    <div class="product-details">
+      <div class="product-name">Black and Red headsets</div>
+      <div class="price-container">
+        <div class="price-before">Ksh 4500</div>
+        <div class="price-now">Ksh 2500</div>
+      </div>
+      <div class="items-left">13 items left in stock</div>
+      <div class="product-rating">
+        <img src="../icons/cropped-five star rating sign_8240251 (1).png" alt="rating" class="rating-stars">
+        <div class="rating-number">4 stars</div>
+      </div>
+      <div class="cart-actions">
+        <select class="quantity-selector">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!--Third product-->
+  <div class="product-container">
+    <div>
+      <img src="../products/cooling-fan.jpg" alt="cooling-fan" class="product-image">
+    </div>
+    <div class="product-details">
+      <div class="product-name">cooling fan</div>
+      <div class="price-container">
+        <div class="price-before">Ksh 2000</div>
+        <div class="price-now">Ksh 1600</div>
+      </div>
+      <div class="items-left">7 items left in stock</div>
+      <div class="product-rating">
+        <img src="../icons/cropped-five star rating sign_8240251 (1).png" alt="rating" class="rating-stars">
+        <div class="rating-number">4.5 stars</div>
+      </div>
+      <div class="cart-actions">
+        <select class="quantity-selector">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!--Fourth product-->
+  <div class="product-container">
+    <div>
+      <img src="../products/Tecno pop 8.jpg" alt="Tecno pop 8" class="product-image">
+    </div>
+    <div class="product-details">
+      <div class="product-name">Tecno pop 8</div>
+      <div class="price-container">
+        <div class="price-before">Ksh 15000</div>
+        <div class="price-now">Ksh 8999</div>
+      </div>
+      <div class="items-left">17 items left in stock</div>
+      <div class="product-rating">
+        <img src="../icons/cropped-five star rating sign_8240251 (1).png" alt="rating" class="rating-stars">
+        <div class="rating-number">4.5 Stars</div>
+      </div>
+      <div class="cart-actions">
+        <select class="quantity-selector">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!--Fifth product-->
+  <div class="product-container">
+    <div>
+      <img src="../products/png-aura.com-mouse.png" alt="Mouse" class="product-image">
+    </div>
+    <div class="product-details">
+      <div class="product-name">Mouse</div>
+      <div class="price-container">
+        <div class="price-before">Ksh 900</div>
+        <div class="price-now">Ksh 600</div>
+      </div>
+      <div class="items-left">24 items left in stock</div>
+      <div class="product-rating">
+        <img src="../icons/cropped-five star rating sign_8240251 (1).png" alt="rating" class="rating-stars">
+        <div class="rating-number">3 Stars</div>
+      </div>
+      <div class="cart-actions">
+        <select class="quantity-selector">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <script src="../javascript/homepage.js"></script>
 </body>
 </html>

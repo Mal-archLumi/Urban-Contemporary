@@ -1,22 +1,15 @@
-/*const toggleMenu = () => {
-  const menu = document.querySelector('.sidebar-navigation');
-  if (menu.style.display === 'none') {
-	menu.style.display = 'float';
-  } else {
-	menu.style.display = 'none';
-  }
-};
-
-document.querySelector('.show-Menu-Icon').addEventListener('click', toggleMenu);
-*/
 
 function toggleMenu (){
-  const menu = document.querySelector('.sidebar-navigation');
-  if (menu.style.display === 'none') {
-  menu.style.display = 'flex';
+  const sidebar = document.querySelector('.sidebar-navigation');
+  if (sidebar.style.display === 'none' || sidebar.style.display === '') {
+    sidebar.style.display = 'flex';
   } else {
-  menu.style.display = 'none';
+    sidebar.style.display = 'none';
   }
 }
 
-document.querySelector('.menu-toggle-button').addEventListener('click', toggleMenu);
+document.querySelector('.menu-icon-image').addEventListener('click', toggleMenu);
+
+document.querySelector('.close-menu-bar').addEventListener('click', toggleMenu);
+
+//second header with products

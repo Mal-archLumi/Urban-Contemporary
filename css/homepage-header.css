@@ -1,0 +1,335 @@
+html,body{
+  font-family: Roboto, Arial;
+  margin: 0;
+  padding: 0;
+}
+
+/*The main header at the top with blue background*/
+  .header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 20px;
+    width: 100%;
+    height:70px; 
+    background-color: rgb(60, 196, 250);
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 55px;
+}
+
+.header-left-section{
+  display:flex;
+  flex-direction: row;
+}
+
+.company-logo-image{
+  width:100%;
+  max-width:200px;
+  min-width: 100px;
+  height:auto;
+  border:none;
+  image-rendering: optimizeQuality;
+  background-color: transparent;
+  cursor:pointer;
+}
+
+.middle-section{
+    flex: 1;
+    display: flex;
+    position: relative;
+    margin: 0 0 0 40px;
+    padding: 0 4px;
+    height: 40px;
+}
+
+
+.search-button-header{
+  width:100%;
+  max-width:42px;
+  background-color:rgb(255, 247, 247);
+  border:none;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgb(126, 126, 131);
+  border-radius: 0 40px 40px 0;
+}
+
+.search-bar-header{
+  font-family:Roboto;
+  font-size:18px;
+  color:rgb(60,60,60);
+  border:none;
+  box-shadow: 1px 1px 5px rgb(69, 69, 71);
+  padding:10px 20px 10px 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 40px 0 0 40px;
+}
+
+.search-bar-header:hover{
+  opacity:0.95;
+  transition: 0.2s ease-in-out;
+}
+
+.search-bar-header:active{
+  opacity:0.9;
+  transition: 0.2s ease-in-out;
+}
+
+
+.header-right-section{
+ display:flex;
+ flex-direction: row;
+  align-items: center;
+  margin-right:30px
+}
+
+.header-p-menu{
+  display:flex;
+  flex-direction: row;
+  margin-right: 50px;
+  cursor:pointer;
+  font-family: Roboto;
+  font-size:18px;
+}
+
+nav ul{
+  width:100%;
+  list-style: none;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+
+nav a:hover{
+  color:white;
+  transition: 0.2s;
+}
+
+nav a:active{
+opacity:0.8;
+text-decoration: underline;
+}
+
+nav a{
+  height:50px;
+  padding:30px;
+  text-decoration: none;
+  display:flex;
+  align-items: center;
+}
+
+.sidebar-navigation-list{
+  position:fixed;
+  top:0;
+  right:0;
+  height:100vh;
+  width:100%;
+  max-width: 250px;
+  z-index:999;
+  background-color: rgba(255, 255, 255, 0.205);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:flex-start;
+  transition:all 0.1s ease-in-out;
+}
+
+.sidebar-navigation-list li{
+  width:100%;
+}
+
+.sidebar-navigation-list a{
+  width:100%;
+}
+
+.menu-icon-image{
+  width:100%;
+  max-width: 26px;
+}
+
+.close-menu-bar{
+  width:100%;
+  max-width:26px;
+  margin-bottom:2px;
+}
+
+/* The second header the products and login button*/
+
+.mini-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1; max-width:calc(100%-100px)
+}
+
+.scroll-btn {
+  border: none;
+  padding: px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 20px;
+  flex-shrink: 0; 
+  border-radius: 18px;
+}
+.scroll-btn:hover{
+  background-color:rgb(60, 196, 250);
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-btn.left-btn {
+  position: relative; 
+  margin-right: 5px; 
+}
+
+.scroll-btn.right-btn {
+  position: relative; 
+  margin-left: 5px;
+}
+
+.scroll-container {
+  overflow-x: auto;
+  scroll-behavior: smooth; 
+  flex-grow: 1; 
+  max-width: calc(100% - 750px);
+  min-width: 250px;
+}
+
+.scroll-content {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  max-width:400px; 
+}
+
+.scroll-header-products {
+  cursor: pointer;
+  padding: 8px 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-header-products:hover {
+  background-color: rgb(111, 207, 245);
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-header-products:active {
+  background-color: rgb(60, 196, 250);
+  transition: all 0.1s ease-in-out;
+}
+
+/* Ensure the login button has its space */
+.button-logon-css {
+  margin-left: 15px; /* Space from the right scroll button */
+}
+
+/*mini header-rightmost section*/
+/*login button*/
+
+.mini-header-right-section-login-cart{
+display:flex;
+flex-direction:row;
+align-items: center;
+margin-left:40px;
+}
+
+.button-login-css{
+  padding:10px 35px 10px 35px;
+  font-family: Arial;
+  font: size 15px;
+  border:none;
+  cursor:pointer;
+}
+
+.button-login-css:hover{
+  background-color:rgb(111, 207, 245);
+  opacity:0.9;
+  transition:all 0.2s ease-in-out;
+}
+
+.button-login-css:active{
+  background-color: rgb(60, 196, 250);
+  opacity:0.9;
+  transition:all 0.1s ease-in-out;
+}
+
+.shopping-cart-trolley-img{
+  width:100%;
+  max-width:30px;
+  border:none;
+  margin-right:30px;
+  margin-left:50px;
+  cursor:pointer;
+  padding:3px 5px 3px 5px; 
+  border-radius: 7px;
+}
+.shopping-cart-trolley-img:hover{
+  background-color:  rgb(111, 207, 245);
+  border-radius: 7px;
+  transition: 0.2s ease-in-out;
+}
+
+.shopping-cart-trolley-img:active{
+  opacity:0.7s ;
+  transition: 0.1s ease-in-out;
+}
+
+.saved-products-later-viewing{
+  width:100%;
+  max-width:25px;
+  border:none;
+  margin-right:30px;
+  cursor:pointer;
+  padding:3px 6px 3px 6px;
+  border-radius: 7px;
+}
+
+.saved-products-later-viewing:hover{
+  background-color:rgb(111, 207, 245);
+  opacity:0.9;
+  transition:0.2s ease-in-out; 
+}
+.saved-products-later-viewing:active{
+  opacity:0.7;
+  transition:0.2s ease-in-out;
+}
+
+.ordered-items-view-css{
+  width:100%;
+  max-width:30px;
+  border:none;
+  margin-right:150px;
+  cursor:pointer;
+}
+.ordered-items-view-css:hover{
+  opacity:0.8;
+  transition:.2s ease-in-out;
+}
+
