@@ -12,196 +12,81 @@
 <link rel="stylesheet" href="../css/products.css">
 </head>
 <body>
-  <header class="header">
-    <div class="header-left-section">
-      <img class="company-logo-image" src="../icons/company-logo-removebg-preview.png" alt="Company Logo">
+  <!-- Main Header -->
+<header class="header">
+  <div class="header-content">
+    <div class="header-left">
+      <img class="logo" src="../icons/3-company-logo__1_-removebg-preview.png" alt="Company Logo">
     </div>
-    <div class="middle-section">
-      <input class="search-bar-header" type="text" placeholder="Search">
-      <img src="../icons/—Pngtree—vector search icon_3783210.png" class="search-button-header" alt="Search Icon">
+    
+    <div class="search-section">
+      <input type="search" class="search-bar" placeholder="Search" aria-label="Search products">
+      <button type="button" class="search-btn" aria-label="Search">
+        <img src="../icons/—Pngtree—vector search icon_3783210.png" alt="" class="search-icon">
+      </button>
     </div>
-    <div class="header-right-section">
-      <nav>
-        <ul class="menu-js-list">
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  
-  <div class="mini-header">
-    <button type="button" class="scroll-btn left-btn">&lt;</button>
-    <div class="scroll-container">
-      <div class="scroll-content">
-        <div class="scroll-header-products">Mens Shoes</div>
-        <div class="scroll-header-products">Cargo pants</div>
-        <div class="scroll-header-products">Electronics</div>
-        <div class="scroll-header-products">Sound systems</div>
-        <div class="scroll-header-products">Bicycles</div>
-        <div class="scroll-header-products">Toys</div>
-      </div>
-    </div>
-    <button type="button" class="scroll-btn right-btn">&gt;</button>
-    <div class="mini-header-right-section-login-cart">
-      <img class="shopping-cart-trolley-img" src="../icons/shopping-cart-no-background.png" alt="Shopping Cart" title="Cart content">
-      <img class="saved-products-later-viewing" src="../icons/save-icon.png" alt="Saved Products" title="Saved Products">
-      <img src="../icons/orders.png" class="ordered-items-view-css" alt="Order Tracking" title="Order Tracking">
-      <button class="button-login-css buttton-login-js" title="Login to your account">Login</button>
-    </div>
-  </div>
 
- <!--The products section starts here -->
- <div class="all-products-container">
-  <!-- Product 1 -->
-  <div class="product-container">
-    <div>
-      <img src="../products/vintage radio casette.png" alt="vintage radio casette" class="product-image">
-    </div>
-    <div class="product-details">
-      <div class="product-name">Vintage radio player</div>
-      <div class="price-container">
-        <div class="price-before">Ksh 2500</div>
-        <div class="price-now">Ksh 1999</div>
-      </div>
-      <div class="items-left">2 items left in stock</div>
-      <div class="product-rating">
-        <img src="../icons/cropped-five star rating sign_8240251 (1).png" alt="rating" class="rating-stars">
-        <div class="rating-number">5 stars</div>
-      </div>
-      <div class="cart-actions">
-        <select class="quantity-selector">
-          <option value="1" selected>1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-        <button class="add-to-cart-btn">Add to Cart</button>
-      </div>
-    </div>
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="#" class="nav-link">Shops</a></li>
+        <li><a href="#" class="nav-link">Blog</a></li>
+        <li><a href="#" class="nav-link">About</a></li>
+        <li><a href="#" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
   </div>
+</header>
 
-  <!-- Second-product -->
-  <div class="product-container">
-    <div>
-      <img src="../products/Black and red headsets.png" alt="Black and Red headsets" class="product-image">
-    </div>
-    <div class="product-details">
-      <div class="product-name">Black and Red headsets</div>
-      <div class="price-container">
-        <div class="price-before">Ksh 4500</div>
-        <div class="price-now">Ksh 2500</div>
-      </div>
-      <div class="items-left">13 items left in stock</div>
-      <div class="product-rating">
-        <img src="../icons/cropped-five star rating sign_8240251 (1).png" alt="rating" class="rating-stars">
-        <div class="rating-number">4 stars</div>
-      </div>
-      <div class="cart-actions">
-        <select class="quantity-selector">
-          <option value="1" selected>1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-        <button class="add-to-cart-btn">Add to Cart</button>
+<!-- Mini Header -->
+<div class="mini-header">
+  <div class="mini-header-content">
+    <button class="scroll-btn left-btn" aria-label="Scroll left">&lt;</button>
+    
+    <div class="scroll-wrapper">
+      <div class="scroll-container" aria-label="Product categories">
+        <div class="scroll-content">
+          <a href="#" class="scroll-item">Mens Shoes</a>
+          <a href="#" class="scroll-item">Cargo pants</a>
+          <a href="#" class="scroll-item">Electronics</a>
+          <a href="#" class="scroll-item">Sound systems</a>
+          <a href="#" class="scroll-item">Bicycles</a>
+          <a href="#" class="scroll-item">TVs</a>
+          <a href="#" class="scroll-item">Laptops</a>
+          <a href="#" class="scroll-item">Musical instruments</a>
+          <a href="#" class="scroll-item">Sporting goods</a>
+          <a href="#" class="scroll-item">Home deco</a>
+          <a href="#" class="scroll-item">Office</a>
+        </div>
       </div>
     </div>
-  </div>
+    
+    <button class="scroll-btn right-btn" aria-label="Scroll right">&gt;</button>
 
-  <!--Third product-->
-  <div class="product-container">
-    <div>
-      <img src="../products/cooling-fan.jpg" alt="cooling-fan" class="product-image">
-    </div>
-    <div class="product-details">
-      <div class="product-name">cooling fan</div>
-      <div class="price-container">
-        <div class="price-before">Ksh 2000</div>
-        <div class="price-now">Ksh 1600</div>
-      </div>
-      <div class="items-left">7 items left in stock</div>
-      <div class="product-rating">
-        <img src="../icons/cropped-five star rating sign_8240251 (1).png" alt="rating" class="rating-stars">
-        <div class="rating-number">4.5 stars</div>
-      </div>
-      <div class="cart-actions">
-        <select class="quantity-selector">
-          <option value="1" selected>1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-        <button class="add-to-cart-btn">Add to Cart</button>
-      </div>
-    </div>
-  </div>
-
-  <!--Fourth product-->
-  <div class="product-container">
-    <div>
-      <img src="../products/Tecno pop 8.jpg" alt="Tecno pop 8" class="product-image">
-    </div>
-    <div class="product-details">
-      <div class="product-name">Tecno pop 8</div>
-      <div class="price-container">
-        <div class="price-before">Ksh 15000</div>
-        <div class="price-now">Ksh 8999</div>
-      </div>
-      <div class="items-left">17 items left in stock</div>
-      <div class="product-rating">
-        <img src="../icons/cropped-five star rating sign_8240251 (1).png" alt="rating" class="rating-stars">
-        <div class="rating-number">4.5 Stars</div>
-      </div>
-      <div class="cart-actions">
-        <select class="quantity-selector">
-          <option value="1" selected>1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-        <button class="add-to-cart-btn">Add to Cart</button>
-      </div>
-    </div>
-  </div>
-
-  <!--Fifth product-->
-  <div class="product-container">
-    <div>
-      <img src="../products/png-aura.com-mouse.png" alt="Mouse" class="product-image">
-    </div>
-    <div class="product-details">
-      <div class="product-name">Mouse</div>
-      <div class="price-container">
-        <div class="price-before">Ksh 900</div>
-        <div class="price-now">Ksh 600</div>
-      </div>
-      <div class="items-left">24 items left in stock</div>
-      <div class="product-rating">
-        <img src="../icons/cropped-five star rating sign_8240251 (1).png" alt="rating" class="rating-stars">
-        <div class="rating-number">3 Stars</div>
-      </div>
-      <div class="cart-actions">
-        <select class="quantity-selector">
-          <option value="1" selected>1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-        <button class="add-to-cart-btn">Add to Cart</button>
-      </div>
+    <div class="header-utils">
+      <button class="icon-btn" aria-label="Cart">
+        <img src="../icons/shopping-cart-no-background.png" alt="" class="util-icon">
+      </button>
+      <button class="icon-btn" aria-label="Saved items">
+        <img src="../icons/save-icon.png" alt="" class="util-icon">
+      </button>
+      <button class="icon-btn" aria-label="Orders">
+        <img src="../icons/orders.png" alt="" class="util-icon">
+      </button>
+      <button class="login-btn">Login</button>
     </div>
   </div>
 </div>
 
+ <!--The products section starts here -->
+ <div class="main-container">
+    <div class="all-products-container">
+    </div>
+    
+</div>
 
-  <script src="../javascript/homepage.js"></script>
+<script src="../javascript/cart.js"></script>
+<script src="../javascript/products.js"></script>
+<script src="../javascript/homepage.js"></script>
+  
 </body>
 </html>
