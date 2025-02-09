@@ -1,0 +1,33 @@
+[7528:1752:2025-2-4 20:20:28.984] Main Start
+[7528:1752:2025-2-4 20:20:28.984] Command line:"C:\Users\LUMITI\Desktop\Urban contemporary\products\Zoom_cm_fo42pnktZ9vvrZo4_mop+BOtpbUesHO2COA9ET1pZtFRoUxSaaB6wM@PJ9JWsNYSPdYpBFc_kfc0e7c551be9fa59_.exe"  Instance:0xFF0000 Show State:1
+[7528:1752:2025-2-4 20:20:29.42] Zoo
+[7528:12860:2025-2-4 20:20:29.54] [process_requst] start, url:https://us06web.zoom.us/conf/launch
+[7528:12860:2025-2-4 20:20:29.283] [req_state_read_status_code] zHttpQueryInfo complete, status:503
+[7528:12860:2025-2-4 20:20:29.283] [req_state_read_status_code] zHttpQueryInfo complete, status:503 Error: 0
+[7528:12860:2025-2-4 20:20:29.283] [read_response_content] API call zHttpQueryInfo failed, error: 12150
+[7528:12860:2025-2-4 20:20:29.289] [log_response_content] Content length (1048576 as unknown):1048576 , Total read: 0 , Error No: 0 , Status code: 503
+[7528:12860:2025-2-4 20:20:29.289] [log_response_content] header:
+[7528:12860:2025-2-4 20:20:29.289] HTTP/1.0 503 Service Unavailable
+User-Agent: Evozi-EHI/1.4.1
+
+
+[7528:12860:2025-2-4 20:20:29.289] [process_requst] End for url:https://us06web.zoom.us/conf/launch, return code:503, Error:1010, Response content size:0
+[7528:12860:2025-2-4 20:20:29.345] [process_requst] start, url:https://us06web.zoom.us/conf/launch
+[7528:12860:2025-2-4 20:20:29.439] [req_state_read_status_code] zHttpQueryInfo complete, status:503
+[7528:12860:2025-2-4 20:20:29.440] [req_state_read_status_code] zHttpQueryInfo complete, status:503 Error: 0
+[7528:12860:2025-2-4 20:20:29.440] [read_response_content] API call zHttpQueryInfo failed, error: 12150
+[7528:12860:2025-2-4 20:20:29.444] [log_response_content] Content length (1048576 as unknown):1048576 , Total read: 0 , Error No: 0 , Status code: 503
+[7528:12860:2025-2-4 20:20:29.444] [log_response_content] header:
+[7528:12860:2025-2-4 20:20:29.444] HTTP/1.0 503 Service Unavailable
+User-Agent: Evozi-EHI/1.4.1
+
+
+[7528:12860:2025-2-4 20:20:29.444] [process_requst] End for url:https://us06web.zoom.us/conf/launch, return code:503, Error:1010, Response content size:0
+[7528:1752:2025-2-4 20:20:29.484] [client_has_installed_app] found path:
+[7528:1752:2025-2-4 20:20:29.484]  ***NULL-POINTER-PLACEHOLDER***
+[16376:11936:2025-2-4 20:20:34.519] Main Start
+[16376:11936:2025-2-4 20:20:34.523] Command line:"C:\Users\LUMITI\Desktop\Urban contemporary\products\Zoom_cm_fo42pnktZ9vvrZo4_mop+BOtpbUesHO2COA9ET1pZtFRoUxSaaB6wM@PJ9JWsNYSPdYpBFc_kfc0e7c551be9fa59_.exe"  Instance:0xFF0000 Show State:1
+[16376:11936:2025-2-4 20:20:34.525] [app_init] init_opener_worker failed.
+[16376:11936:2025-2-4 20:20:34.525] MyMain Failed to init.
+[16376:11936:2025-2-4 20:20:34.525] Main End
+[7528:1752:2025-2-4 20:21:57.610] Main End

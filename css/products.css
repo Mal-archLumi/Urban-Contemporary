@@ -85,6 +85,10 @@
   background-color: #f0f0f0;
 }
 
+.product-name{
+  font-size:15px;
+}
+
 .product-details {
   display: flex;
   flex-direction: column;
@@ -131,11 +135,21 @@
   margin-top: auto;
 }
 
+.cart-quantity-display-css{
+  color: green;
+  font-size: 15px;
+  margin-left: 2px;
+}
 .quantity-selector {
   padding: 0.5r em;
   border-radius: var(--border-radius);
   border: 1px solid #ccc;
   font-size: 0.9em;
+}
+
+.show-added-to-cart-css{
+  color:green;
+  font-size:10px;
 }
 
 .add-to-cart-btn {

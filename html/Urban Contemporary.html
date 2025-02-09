@@ -63,16 +63,21 @@
     <button class="scroll-btn right-btn" aria-label="Scroll right">&gt;</button>
 
     <div class="header-utils">
-      <button class="icon-btn" aria-label="Cart">
+      <a href="./Checkout.html">
+      <button class="icon-btn icon-btn-1" aria-label="Cart">
         <img src="../icons/shopping-cart-no-background.png" alt="" class="util-icon">
+        <div class="cart-quantity-display-js cart-quantity-display-css"></div>
       </button>
-      <button class="icon-btn" aria-label="Saved items">
-        <img src="../icons/save-icon.png" alt="" class="util-icon">
-      </button>
+    </a>
+      
       <button class="icon-btn" aria-label="Orders">
         <img src="../icons/orders.png" alt="" class="util-icon">
       </button>
-      <button class="login-btn">Login</button>
+      
+        <select class="login-btn">
+          <option value="1" selected href="">Sign up</option>
+          <option value="2" href="">Log in</option>
+        </select>
     </div>
   </div>
 </div>
@@ -84,9 +89,7 @@
     
 </div>
 
-<script src="../javascript/cart.js"></script>
-<script src="../javascript/products.js"></script>
-<script src="../javascript/homepage.js"></script>
+<script type="module" src="../javascript/homepage.js"></script>
   
 </body>
 </html>

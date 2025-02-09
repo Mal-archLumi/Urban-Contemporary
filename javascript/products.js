@@ -1,7 +1,11 @@
 //product details
-const products=[{
+import { getpersistentUUID } from './utils.js';
+
+
+export const products=[{
+  id: getpersistentUUID("Vitron 43  Android Fremeless Tv"),
   image:'../products/Vitron HTC4388FS - 43  Smart  Android Frameless TV.jpg',
-  name:"Vitron 43'  Android Fremeless Tv",
+  name:"Vitron 43  Android Frameless Tv",
   price:{
     before:37000,
     now: 28999,
@@ -13,6 +17,7 @@ const products=[{
   },
 } ,
 {
+  id: getpersistentUUID("Black and Red headsets"),
   image:'../products/Black and red headsets.png',
   name:'Black and Red headsets',
   price:{
@@ -26,8 +31,9 @@ const products=[{
   } ,
 },
 {
+  id: getpersistentUUID("Cooling fan"),
   image:'../products/cooling-fan.jpg',
-  name:'cooling fan',
+  name:'Cooling fan',
   price:{
     before:2000,
     now:1600,
@@ -39,6 +45,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Tecno pop 8"),
   image:'../products/Tecno pop 8.jpg',
   name:'Tecno pop 8',
   price:{
@@ -52,6 +59,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Wireless Mouse"),
   image:'../products/png-aura.com-mouse.png',
   name:'Wireless Mouse',
   price:{
@@ -65,6 +73,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Amtec home theatre system"),
   image:'../products/Amtec  HOME THEATER SYSTEM-20000W PMPO.jpg',
   name:'Amtec home theatre system',
   price:{
@@ -78,8 +87,9 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Amtec am-609"),
   image:'../products/Amtec am-609  quality bass home theater system.jpg',
-  name:'Amtec am-609 ',
+  name:'Amtec am-609',
   price:{
     before: 6000,
     now: 5400,
@@ -91,6 +101,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Asus Vivobook Go 14(E1404G)"),
   image:'../products/Asus Vivobook Go 14(E1404G)-Intel Core I3-N305-8GB RAM-256G UFS 2.1-14 Inch FHD-Black, (1YR WRTY).jpg',
   name:'Asus Vivobook Go 14(E1404G)',
   price:{
@@ -104,6 +115,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("C15 Portale Bluetooth system"),
   image:'../products/C15 Portable Loud Mobile Bluetooth Sound System.jpg',
   name:'C15 Portale Bluetooth system',
   price:{
@@ -117,6 +129,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("HP Elitebook 6th Gen 840 refurbished"),
   image:'../products/HP Refurbished 6th Generation EliteBook 840 G3 Core I5-8GB - 256GB Ssd - Win 10 - Silver.jpg',
   name:'HP Elitebook 6th Gen 840 refurbished',
   price:{
@@ -130,19 +143,21 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Lenovo Idealpad 12th Gen"),
   image:'../products/Lenovo Ideapad 1-12th Gen Intel Core I3-4GB RAM-256GB SSD-Windows 11-14 Inch HD-Grey, (1YR WRTY).jpg',
   name:'Lenovo Idealpad 12th Gen',
   price:{
     before: 46000,
     now: 35000,
   },
-  stock_left: '12',
+  stock_left: 12,
   rating:{
     image: '../icons/cropped-five star rating sign_8240251 (1).png',
     star_count: 3.5,
   },
 },
 {
+  id: getpersistentUUID("Mouse"),
   image:'../products/Starlink Standard Actuated Kit High-Speed, Low-Latency Internet with Gen 2 Router, Wi-Fi 5.jpg',
   name:'Mouse',
   price:{
@@ -156,6 +171,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Vitron 32 Inch Smart Android Tv"),
   image:'../products/Vitron 3200S,32 Inch Smart Android TV,NetflixYoutube, Appstore etc.jpg',
   name:'Vitron 32 Inch Smart Android Tv',
   price:{
@@ -169,6 +185,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Vintage Radio Player"),
   image:'../products/vintage radio casette.png',
   name:'Vintage Radio Player',
   price:{
@@ -182,6 +199,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Nunix 3.1 mini home theatre"),
   image:'../products/Nunix 3.1 MINI Home Theater System M7 Heavy Music System With Remote Control + Bluetooth 12000 Watts Deep Base.jpg',
   name:'Nunix 3.1 mini home theatre',
   price:{
@@ -195,19 +213,21 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("ALagzi Men's Trendy Sneakers"),
   image:"../products/ALagzi Men's Trendy Sneakers - White.jpg",
   name:"ALagzi Men's Trendy Sneakers",
   price:{
     before: 3700,
     now: 2500,
   },
-  stock_left:"14 pairs",
+  stock_left:14,
   rating:{
     image: '../icons/cropped-five star rating sign_8240251 (1).png',
     star_count: 4,
   },
 },
 {
+  id: getpersistentUUID("Anti Theft Laptop Bag"),
   image:'../products/Anti Theft Laptop Bag  Travel Backpack Black.jpg',
   name:'Anti Theft Laptop Bag',
   price:{
@@ -221,6 +241,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Clover pendant necklace"),
   image:'../products/Clover pendant necklace.jpg',
   name:'Clover pendant necklace',
   price:{
@@ -234,6 +255,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Fancy Laptop Pouch"),
   image:'../products/Fancy Laptop Pouch.jpg',
   name:'Fancy Laptop Pouch',
   price:{
@@ -247,6 +269,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Fashion Gym Pants Cotton"),
   image:'../products/Fashion Gym Pants Cotton.jpg',
   name:'Fashion Gym Pants Cotton',
   price:{
@@ -260,6 +283,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Mens casual sneakers"),
   image:'../products/Fashion Mens Sneaker Causal Breathable Shoes Light Weight Walking Shoes.jpg',
   name:'Mens casual sneakers',
   price:{
@@ -273,6 +297,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Fashion Tuxedo White Suit"),
   image:'../products/Fashion Tuxedo White Suit.jpg',
   name:'Fashion Tuxedo White Suit',
   price:{
@@ -286,6 +311,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Adult Mountain bike"),
   image:'../products/Huffy High Size 26 Mountain Bike Adult Bicycle Mountain  Bicycle.jpg',
   name:'Adult Mountain bike',
   price:{
@@ -299,6 +325,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Maple Leaf Violin"),
   image:'../products/Maple Leaf Violin.jpg',
   name:'Maple Leaf Violin',
   price:{
@@ -312,6 +339,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Mens casual black cargo pants"),
   image:'../products/Men casual black cargo pants.jpg',
   name:'Mens casual black cargo pants',
   price:{
@@ -325,6 +353,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Nightime wolf necklace"),
   image:'../products/Nightime wolf necklace.jpg',
   name:'Nightime wolf necklace',
   price:{
@@ -338,6 +367,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Kids' Waterproof Hiking Jacket"),
   image:"../products/Quechua Kids’ Waterproof Hiking Jacket - Mh500 Aged 7-15 - Plum.jpg",
   name:"Kids' Waterproof Hiking Jacket",
   price:{
@@ -351,6 +381,7 @@ const products=[{
   },
 },
 {
+  id: getpersistentUUID("Assembled Executive Office Chair"),
   image:'../products/Assembled Executive Office Chair.jpg',
   name:'Assembled Executive Office Chair',
   price:{
@@ -365,3 +396,4 @@ const products=[{
 },
 
 ];
+
