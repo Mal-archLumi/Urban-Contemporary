@@ -1,0 +1,38 @@
+.kati {
+    align-content: center;
+}
+
+h1 {
+    position: absolute;
+    top: 48%;
+    left: 45%;
+    font-size:xx-large;
+    text-align: center;
+    
+}
+
+body {
+    background:linear-gradient(to bottom, rgb(27, 139, 204), white);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+
+}
+
+form {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+
+    
+}
+input {
+    font-size: large;
+    padding: 10px;
+    width: 500px;
+    
+}
+
+img {
+    position: relative;
+    left: 37%;
+}
