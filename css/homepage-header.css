@@ -90,6 +90,36 @@ html, body {
 }
 
 /* Navigation */
+.right-btn{
+padding:8px 13px;
+border-radius: 18px;
+border:none;
+cursor: pointer;
+}
+
+.right-btn:hover{
+  background: #3cc4fa;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+.right-btn:active{
+  opacity:0.8;
+}
+.left-btn{ 
+  padding:8px 13px;
+  border-radius: 18px;
+  border:none;
+  cursor: pointer;
+}
+.left-btn:hover{
+  background: #3cc4fa;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+.left-btn:active{
+  opacity:0.8;
+}
+
 .nav-list {
   display: flex;
   gap: 1.5rem;

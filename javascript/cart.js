@@ -1,18 +1,19 @@
 export let cart = loadCartFromLocalStorage();
 
-export function addToCart(productId) {
+export function addToCart(productId, quantity) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   let matchingItem = cart.find(item => item.productId === productId);
 
   if (matchingItem) {
-    matchingItem.quantity += 1;
+    matchingItem.quantity += quantity;
   } else {
-    cart.push({ productId, quantity: 1 });
+    cart.push({ productId, quantity});
   }
 
   saveCartToLocalStorage(cart);
-  updateCartQuantity(); // Ensure UI updates
+  updateCartQuantity(); 
+  displaycart();// Ensure UI updates
 }
 
 //  Remove from cart function (updates storage & UI)
@@ -24,6 +25,7 @@ export function removeFromCart(productId) {
 
   saveCartToLocalStorage(cart); //  Save updated cart
   updateCartQuantity(); //  Update cart quantity display
+  displaycart();
 }
 
 //  Updates Cart Icon/Badge
@@ -35,9 +37,11 @@ export function updateCartQuantity() {
 
   if (displayElement) {
     displayElement.innerHTML = cartQuantity;
+    localStorage.setItem('cartQuantityDisplay', cartQuantity); // Store display item to localStorage
   } else {
     console.warn("Cart display element not found! Skipping update.");
   }
+  localStorage.getItem('cartQuantityDisplay');
 }
 
 

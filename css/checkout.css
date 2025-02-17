@@ -125,14 +125,17 @@ cursor: pointer;
 border:none;
 color:#fff;
 border-radius: 2px;
+border-radius: 5px;
 }
 
 .update-btn:hover{
   opacity:0.8;
+  transform: scale(1.02);
 }
 
 .update-btn:active{
   opacity:0.6;
+  transform: scale(1.08);
 }
 
 .delete-btn{
@@ -142,14 +145,37 @@ border-radius: 2px;
   border:none;
   cursor: pointer;
   border-radius: 2px;
+  border-radius: 5px;
 }
 
 .delete-btn:hover{
   opacity:0.8;
+  transform: scale(1.02);
 }
 
 .delete-btn:active{
   opacity:0.6;
+  transform: scale(1.08);
+}
+
+.buy-btn{
+  padding:3px 45px;
+  background-color: rgb(1, 235, 1);
+  border:none;
+  border-radius: 5px;
+  cursor:pointer;
+}
+
+.buy-btn:hover{
+  opacity:0.8;
+  transform: scale(1.02);
+  color:#fff;
+}
+
+.buy-btn:active{
+  color:white;
+  opacity:0.7;
+  transform: scale(1.08);
 }
 
 .cart-item{

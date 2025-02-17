@@ -30,27 +30,28 @@
     <section class="summary-section">
       <h2>Order Summary</h2>
       <div class="summary-details">
-        <div class="summary-item">Items(3)</div>
-        <div class="summary-price">Ksh 3,500</div>
+        <div class="summary-item" id="summary-items">Items(0)</div>
+        <div class="summary-price" id="summary-subtotal">Ksh 0.00</div>
       </div>
       <div class="summary-details">
         <div class="summary-item">Shipping</div>
-        <div class="summary-price">Ksh 400</div>
+        <div class="summary-price" id="summary-shipping">Ksh 0.00</div>
       </div>
       <div class="summary-details">
         <div class="summary-item">Total before tax</div>
-        <div class="summary-price">Ksh 3,900</div>
+        <div class="summary-price" id="summary-total-before-tax">Ksh 0.00</div>
       </div>
       <div class="summary-details">
         <div class="summary-item">Estimated tax</div>
-        <div class="summary-price">Ksh 300</div>
+        <div class="summary-price" id="summary-tax">Ksh 0.00</div>
       </div>
       <div class="summary-total">
         <p>Order Total</p>
-        <p class="order-total-price">Ksh 4,200</p>
+        <p class="order-total-price" id="summary-total">Ksh 0.00</p>
       </div>
       <button class="place-order-btn">Place Your Order</button>
     </section>
+    
   </main>
   <script src="../javascript/checkout.js" type="module"></script>
 </body>
