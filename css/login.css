@@ -8,7 +8,7 @@ h1 {
 }
 
 body {
-    background:linear-gradient(to bottom, rgb(27, 139, 204), white);
+    background:linear-gradient(to bottom, #3cc4fa, white);
     background-repeat: no-repeat;
     background-attachment:fixed;
 
@@ -25,8 +25,6 @@ input {
     font-size: large;
     padding: 10px;
     width: 500px;
-
-    
 }
 
 img {

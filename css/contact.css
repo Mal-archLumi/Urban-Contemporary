@@ -10,6 +10,11 @@
     scroll-padding-top: 125px; /* Total height of both headers */
   }
   
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
   /* Main Header */
   .header {
     position: fixed;
@@ -111,15 +116,247 @@
     transition: 0.2s ease-in-out;
   }
 
-/*Footer*/
-  .footer {
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    height: auto;
+  .riba {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 40px auto;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
   }
-  .footer img {
-    width: 100%;        
-    height: auto;        
-    object-fit: cover;   
+  .riba h2 {
+    color: #00bcd4;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+
+  }
+  .riba p {
+    font-size: 1.1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+/*contact-info*/
+.salimu {
+  flex: 1;
+  min-width: 300px;
+  border: 2px solid #00bcd4;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.salimu h3 {
+  color: #00bcd4;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.salimu h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.salimu p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+.salimu p i {
+  color: #00bcd4;
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+   /*Form*/
+.kaform {
+    flex: 1;
+    min-width: 300px;
+    border: 2px solid #00bcd4;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px;
+}
+
+.kaform p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00bcd4;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.kaform form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.kaform input,
+.kaform textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    max-width: 350px;
+}
+
+.kaform textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.kaform input:focus,
+.kaform textarea:focus {
+    border-color: #00bcd4;
+    outline: none;
+}
+
+.kaform input [type="submit"] {
+    background-color: #00bcd4;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.kaform input [type="submit"] :hover {
+    background-color: #0097a7;
+}
+
+.map1 {
+  flex: 1;
+  min-width: 300px;
+  border: 2px solid #00bcd4;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+.map1 iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-grid {
+        flex-direction: column;  
+        
+    }
+    .left-column,
+            .right-column {
+                width: 100%;
+            }
+    }
+
+/*Footer*/
+.newsletter-container {
+  position: fixed;
+  background-color: #1a237e; /* Dark blue background */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2px auto;
+  border-bottom: 2px solid #1a237e;
+  bottom: 5px;
+  
+  width: 100%;
+}
+
+.newsletter-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.newsletter-text h2 {
+  margin: 0 0 5px 0;
+  font-size: 24px;
+}
+
+.newsletter-text p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+}
+
+.email-input {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+  width: 200px;
+}
+
+.signup-button {
+  background-color: #3cc4fa;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.signup-button:hover {
+  background-color: #0097a7; /* Darker teal on hover */
+}
+  
