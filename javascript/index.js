@@ -7,7 +7,6 @@ import './headers/headers.js';
 
 const productsContainer = document.querySelector('.all-products-container');
 
-
 // Function to render products
 function renderProducts() { 
 
@@ -66,3 +65,7 @@ console.log('cart:',cart);
 
 // Render products when the page loads
 renderProducts();
+
+document.getElementById('login-select').addEventListener('change', function() {
+  window.location.href = this.value;
+});

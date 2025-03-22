@@ -3,25 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up</title>
+    <title>Sign Up - Urban Contemporary</title>
     <link rel="stylesheet" href="../css/sign-up.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <img class="logo" src="../icons/3-company-logo__1_-removebg-preview.png" alt="Company Logo">
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="Index.html" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <div class="kati">
-        <img src="../css/shopo.jpg" alt="icon">
+    <main class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <img src="../products/shopo.jpg" alt="icon" class="auth-logo">
+                <h1>Create Your Account</h1>
+                <p>Join our community of contemporary shoppers</p>
+            </div>
+            
+            <form class="auth-form" action="../php/sign-up.php" method="post">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+                </div>
 
-        <h1>WELCOME</h1>
-        <form action="../php/sign-up.php" method="post" target="_blank">
-            <input type="text" name="username" placeholder="Enter your Username"><br><br>
-            <input type="email" name="Email" placeholder="Enter your Email" required><br><br>
-            <input type="password" name="Password" placeholder="Enter your Password" required><br><br>
-            <input type="button" name="sign-up" value="SIGN-UP">
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="Password" placeholder="Create password" required>
+                    <span class="password-info">At least 8 characters</span>
+                </div>
+
+                <button type="submit" class="auth-btn">Sign Up</button>
+
+                <div class="auth-divider">
+                    <span>or continue with</span>
+                </div>
+
+                <div class="social-auth">
+                    <button type="button" class="social-btn google-btn">
+                        <img src="../icons/google-icon.svg" alt="Google">
+                        Google
+                    </button>
+                    <button type="button" class="social-btn facebook-btn">
+                        <img src="../icons/facebook-icon.svg" alt="Facebook">
+                        Facebook
+                    </button>
+                </div>
+
+                <p class="auth-redirect">Already have an account? <a href="login.html">Log in</a></p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="newsletter-container">
+          <div class="newsletter-text">
+            <h2>Sign up for our Newsletter !</h2>
+            <p>Get E-mail updates about our latest shop and special offers.</p>
+          </div>
+          <div class="newsletter-form">
+              <input type="email" class="email-input" placeholder="Your Email Address" required>
+              <button type="submit" class="signup-button">Sign up</button>
+           </div>
+        </div>
     
-        </form>
-    
-
-    </div>
+    </footer>
     
 </body>
 </html>

@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="../css/homepage-header.css">
+<link rel="stylesheet" href="../css/index.css">
 <link rel="stylesheet" href="../css/products.css">
 </head>
 <body>
@@ -28,7 +28,7 @@
 
     <nav class="main-nav">
       <ul class="nav-list">
-        <li><a href="Index-home.html" class="nav-link">Shops</a></li>
+        <li><a href="#" class="nav-link">Shops</a></li>
         <li><a href="#" class="nav-link">Blog</a></li>
         <li><a href="#" class="nav-link">About</a></li>
         <li><a href="#" class="nav-link">Contact</a></li>
@@ -74,14 +74,10 @@
         <img src="../icons/orders.png" alt="" class="util-icon">
       </button>
       
-        <select class="login-btn">
-          <option value="1" selected href="" class="sign-up-select">Sign up</option>
-          <option value="2" href="" class="sign-up-select">Log in</option>
-        </select>
-          <select class="login-btn">
-            <option value="1" selected href="">Sign up</option>
-            <option value="2" href="../html/login.html">Log in</option>
-          </select>
+      <select class="login-btn" id="login-select">
+        <option value="sign-up.html"  class="sign-up-select">Sign up</option>
+        <option value="login.html" class="sign-up-select">Log in</option>
+      </select>
       </div>
     </div>
   </div>
@@ -93,13 +89,20 @@
     
   </div>
 
-  <script type="module" src="../javascript/homepage.js"></script>
+  <footer>
+    <div class="newsletter-container">
+      <div class="newsletter-text">
+        <h2>Sign up for our Newsletter !</h2>
+        <p>Get E-mail updates about our latest shop and special offers.</p>
+      </div>
+      <div class="newsletter-form">
+          <input type="email" class="email-input" placeholder="Your Email Address" required>
+          <button type="submit" class="signup-button">Sign up</button>
+       </div>
+    </div>
 
+</footer>
 
-
-
-  <footer class="footer">
-    <img src="./sign-up-newsletter.png" alt="Newsletter">
-  </footer>
+<script type="module" src="../javascript/index.js"></script>
 </body>
 </html>

@@ -1,27 +1,83 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login - Urban Contemporary</title>
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <img src="../css/shopo.jpg" alt="icon">
-        <h1>WELCOME BACK</h1>
-        <form action="../php/login.php" method="post" target="_blank">
-            <input type="text" name="Username" placeholder="Username"> <br><br>
-            <input type="password" name="passcode" placeholder="Password"required><br>
-            <strong><a href="./email-reconnect.html" target="_blank">Forgot password</a></strong><br><br>
-            <input type="button" name="Submit" value="LOGIN"><br>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <img class="logo" src="../icons/3-company-logo__1_-removebg-preview.png" alt="Company Logo">
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="Index.html" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-            <p>Don't have an account? <strong><a href="http://127.0.0.1:5500/Urban-Contemporary/html/sign-up.html" target="_blank">Sign-up</a></strong></p>
-          
+    <main class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <img src="../products/shopo.jpg" alt="icon" class="auth-logo">
+                <h1>Welcome Back</h1>
+                <p>Continue your contemporary shopping journey</p>
+            </div>
+            
+            <form class="auth-form" action="../php/login.php" method="post">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="Username" placeholder="Enter your username" required>
+                </div>
 
-        </form>
-    </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="passcode" placeholder="Enter your password" required>
+                    <a href="./email-reconnect.html" class="forgot-password">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="auth-btn">Log In</button>
+
+                <div class="auth-divider">
+                    <span>or continue with</span>
+                </div>
+
+                <div class="social-auth">
+                    <button type="button" class="social-btn google-btn">
+                        <img src="../icons/google-icon.svg" alt="Google">
+                        Google
+                    </button>
+                    <button type="button" class="social-btn facebook-btn">
+                        <img src="../icons/facebook-icon.svg" alt="Facebook">
+                        Facebook
+                    </button>
+                </div>
+
+                <p class="auth-redirect">New to Urban? <a href="sign-up.html">Create account</a></p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="newsletter-container">
+          <div class="newsletter-text">
+            <h2>Sign up for our Newsletter !</h2>
+            <p>Get E-mail updates about our latest shop and special offers.</p>
+          </div>
+          <div class="newsletter-form">
+              <input type="email" class="email-input" placeholder="Your Email Address" required>
+              <button type="submit" class="signup-button">Sign up</button>
+           </div>
+        </div>
+    
+    </footer>
     
 </body>
 </html>
