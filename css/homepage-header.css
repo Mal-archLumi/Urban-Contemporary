@@ -395,3 +395,15 @@ cursor: pointer;
   }
 }
 
+/*Footer*/
+.footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  height: auto;
+}
+.footer img {
+  width: 100%;         
+  height: auto;       
+  object-fit: cover;   
+}

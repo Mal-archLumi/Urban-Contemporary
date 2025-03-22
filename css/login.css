@@ -1,0 +1,35 @@
+h1 {
+    position: absolute;
+    top: 48%;
+    left: 43%;
+    font-size: xx-large;
+    text-align: center;
+    
+}
+
+body {
+    background:linear-gradient(to bottom, rgb(27, 139, 204), white);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+
+}
+
+form {
+    position: absolute;
+    top: 60%;
+    left: 36%;
+    font-size:large;
+}
+input {
+    position: relative;
+    font-size: large;
+    padding: 10px;
+    width: 500px;
+
+    
+}
+
+img {
+    position: relative;
+    left: 38%;
+}
