@@ -1,0 +1,278 @@
+/* shop-details.css */
+/* Hero Section */
+.store-hero {
+  position: relative;
+  margin-top: 80px;
+}
+
+.parallax-cover {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.store-branding {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.store-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid white;
+}
+
+.store-title {
+  font-size: 2.8rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+/* Quick Info */
+.store-quick-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background: #f8f9fa;
+  margin-top: -60px;
+  position: relative;
+  z-index: 1;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.quick-info-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.info-label {
+  display: block;
+  color: #636e72;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-value {
+  font-weight: 500;
+  color: #2d3436;
+  font-size: 1.1rem;
+}
+
+/* Navigation Tabs */
+.store-nav {
+  margin: 3rem 0;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.tab-item {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  color: #636e72;
+  position: relative;
+}
+
+.tab-item.active {
+  color: #3cc4fa;
+  background: rgba(60, 196, 250, 0.1);
+}
+
+.tab-item:hover:not(.active) {
+  background: #f8f9fa;
+}
+
+/* Content Sections */
+.content-section {
+  display: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.content-section.active {
+  display: block;
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.store-features {
+  columns: 2;
+  list-style: none;
+  padding: 0;
+}
+
+.store-features li {
+  padding: 0.8rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.store-features li::before {
+  content: "✓";
+  color: #4CAF50;
+  position: absolute;
+  left: 0;
+}
+
+/* Gallery */
+.store-gallery {
+  position: relative;
+}
+
+.active-gallery {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.gallery-thumbnails {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery-thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.gallery-thumb.active-thumb {
+  opacity: 1;
+  border: 2px solid #3cc4fa;
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.product-info {
+  padding: 1.5rem;
+}
+
+.product-pricing {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.price-now {
+  color: #3cc4fa;
+  font-weight: 700;
+}
+
+.price-before {
+  color: #636e72;
+  text-decoration: line-through;
+}
+
+/* CTA Buttons */
+.store-cta {
+  background: #2d3436;
+  padding: 3rem 0;
+  margin-top: 4rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cta-btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-cta {
+  background: #3cc4fa;
+  color: white;
+}
+
+.direction-cta {
+  background: #4CAF50;
+  color: white;
+}
+
+.website-cta {
+  background: white;
+  color: #2d3436;
+  border: 2px solid #3cc4fa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-grid {
+      grid-template-columns: 1fr;
+  }
+  
+  .store-title {
+      font-size: 2rem;
+  }
+  
+  .nav-tabs {
+      flex-wrap: wrap;
+      gap: 1rem;
+  }
+  
+  .cta-buttons {
+      flex-direction: column;
+      padding: 0 1rem;
+  }
+}

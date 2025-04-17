@@ -3,68 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
+    <title>Stores - Urban Contemporary Mall</title>
     <link rel="stylesheet" href="../css/shop.css">
     <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-     <!-- Main Header -->
-<header class="header">
-    <div class="header-content">
-      <div class="header-left">
-        <img class="logo" src="../icons/3-company-logo__1_-removebg-preview.png" alt="Company Logo">
-      </div>
-      
-      <div class="search-section">
-        <input type="search" class="search-bar" placeholder="Search" aria-label="Search products">
-        <button type="button" class="search-btn" aria-label="Search">
-          <img src="../icons/—Pngtree—vector search icon_3783210.png" alt="" class="search-icon">
-        </button>
-      </div>
-  
-      <nav class="main-nav">
-        <ul class="nav-list">
-          <li><a href="#" class="nav-link">Shops</a></li>
-          <li><a href="#" class="nav-link">Blog</a></li>
-          <li><a href="#" class="nav-link">About</a></li>
-          <li><a href="#" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  
-<!--Products & stuff-->
-  <div class="main-container">
-    <div class="all-products-container">
-    </div>
+    <!-- Main Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="header-left">
+          <img class="logo" src="../icons/3-company-logo__1_-removebg-preview.png" alt="Company Logo">
+        </div>
     
-  </div>
-
-  <script type="module" src="../javascript/index.js"></script>
-
-    <footer>
-
-      <div class="progress-container">
-        <a href="" class="step">1</a>
-        <div class="separator"></div>
-        <a href="" class="step">2</a>
-        <div class="separator"></div>
-        <div><a href=""class="arrow"> → </a></div>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="Index.html" class="nav-link">Home</a></li>
+            <li><a href="shop.html" class="nav-link">Shops</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      
+    </header>
+
+    <!-- Store Directory Section -->
+    <main class="store-directory">
+        <div class="directory-header">
+            <h1>Explore Our Stores</h1>
+            <div class="filter-controls">
+                <div class="search-filter">
+                    <input type="text" placeholder="Search stores..." class="store-search">
+                    <button class="filter-btn">Filter</button>
+                </div>
+                <div class="category-tags">
+                    <span class="category-tag active">All</span>
+                    <span class="category-tag">Fashion</span>
+                    <span class="category-tag">Electronics</span>
+                    <span class="category-tag">Home & Living</span>
+                    <span class="category-tag">Dining</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="stores-grid">
+            <!-- Store Card 1 -->
+            <article class="store-card" data-store-id="1">
+                <div class="store-cover">
+                    <img src="../stores/ALagzi Men's Trendy Sneakers - White.jpg" alt="Urban Fashion Store" class="cover-image">
+                    <div class="store-status open">OPEN</div>
+                </div>
+                <div class="store-info">
+                    <h2 class="store-name">Urban Fashion Hub</h2>
+                    <p class="store-description">Contemporary clothing & accessories for the modern lifestyle</p>
+                    <div class="store-meta">
+                        <span class="store-floor">Level 2</span>
+                        <span class="store-rating">★ 4.8 (350)</span>
+                    </div>
+                    <button class="view-store-btn">Explore Store →</button>
+                </div>
+            </article>
+
+            <!-- Repeat store cards with different content -->
+        </div>
+
+        <!-- Store Pagination -->
+        <div class="pagination">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <span class="page-dots">...</span>
+            <button class="page-btn">10</button>
+        </div>
+    </main>
+
+    <!-- Featured Stores Banner -->
+    <section class="featured-stores">
+        <h2>Newly Opened Stores</h2>
+        <div class="featured-carousel">
+            <!-- Featured store cards -->
+        </div>
+    </section>
+
+    <!-- Same footer as index.html -->
+    <footer>
       <div class="newsletter-container">
         <div class="newsletter-text">
           <h2>Sign up for our Newsletter !</h2>
           <p>Get E-mail updates about our latest shop and special offers.</p>
         </div>
         <div class="newsletter-form">
-          <input type="email" class="email-input" placeholder="Your Email Address" required>
-          <button type="submit" class="signup-button">Sign up</button>
-        </div>
+            <input type="email" class="email-input" placeholder="Your Email Address" required>
+            <button type="submit" class="signup-button">Sign up</button>
+         </div>
       </div>
   
-
-   </footer>
-
+  </footer>
+    
+    <script type="module" src="../javascript/shop.js"></script>
 </body>
 </html>

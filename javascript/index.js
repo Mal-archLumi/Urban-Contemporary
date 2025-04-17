@@ -2,7 +2,7 @@
 The html for the checkout is generated here*/
 //homepage.js
 import { products } from './products.js';
-import{cart,addToCart,updateCartQuantity} from './cart.js';
+import { cart, addToCart, updateCartQuantity } from './cart.js';
 import './headers/headers.js';
 
 const productsContainer = document.querySelector('.all-products-container');
@@ -52,15 +52,15 @@ function renderProducts() {
   document.querySelectorAll('.add-to-cart-js').forEach((button) => {
     button.addEventListener('click', () => {
       const productId = button.dataset.productId;
-      const quantity = parseInt(button.previousElementSibling.value, 10); // Fix: Ensure correct quantity selection
+      const quantitySelector = button.closest('.cart-actions').querySelector('.quantity-selector');
+      const quantity = parseInt(quantitySelector.value, 10);
 
       addToCart(productId, quantity);
       updateCartQuantity();
+    });
   });
-});
 
-
-console.log('cart:',cart);
+  console.log('cart:', cart);
 }
 
 // Render products when the page loads

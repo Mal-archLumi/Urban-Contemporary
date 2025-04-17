@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Fashion Hub - Urban Contemporary Mall</title>
+    <link rel="stylesheet" href="../css/shop-details.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main Header -->
+    <header class="header">
+        <!-- Same header as shop.html -->
+    </header>
+
+    <!-- Store Hero Section -->
+    <section class="store-hero">
+        <div class="hero-cover">
+            <img src="../stores/store-cover.jpg" alt="Store Cover" class="parallax-cover">
+            <div class="store-branding">
+                <img src="../stores/store-logo.png" alt="Store Logo" class="store-logo">
+                <h1 class="store-title">Urban Fashion Hub</h1>
+            </div>
+        </div>
+        
+        <div class="store-quick-info">
+            <div class="quick-info-card">
+                <span class="info-label">Location</span>
+                <span class="info-value">Level 2, Section B12</span>
+            </div>
+            <div class="quick-info-card">
+                <span class="info-label">Open Now</span>
+                <span class="info-value">10:00 AM - 9:00 PM</span>
+            </div>
+            <div class="quick-info-card">
+                <span class="info-label">Contact</span>
+                <span class="info-value">+254 712 345 678</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Navigation -->
+    <nav class="store-nav">
+        <ul class="nav-tabs">
+            <li class="tab-item active" data-tab="about">About</li>
+            <li class="tab-item" data-tab="products">Products</li>
+            <li class="tab-item" data-tab="reviews">Reviews (350)</li>
+            <li class="tab-item" data-tab="location">Location</li>
+        </ul>
+    </nav>
+
+    <!-- Store Content Sections -->
+    <main class="store-content">
+        <!-- About Tab -->
+        <section class="content-section active" id="about">
+            <div class="section-grid">
+                <div class="store-description">
+                    <h2>Contemporary Fashion Redefined</h2>
+                    <p>Step into a world where modern aesthetics meet timeless elegance. Our curated collection features:</p>
+                    <ul class="store-features">
+                        <li>Premium quality fabrics</li>
+                        <li>Seasonal collections</li>
+                        <li>Personal styling services</li>
+                        <li>VIP fitting rooms</li>
+                    </ul>
+                </div>
+                <div class="store-gallery">
+                    <div class="main-gallery">
+                        <img src="../stores/store-interior-1.jpg" alt="Store Interior" class="active-gallery">
+                    </div>
+                    <div class="gallery-thumbnails">
+                        <img src="../stores/thumb-1.jpg" class="gallery-thumb active-thumb">
+                        <img src="../stores/thumb-2.jpg" class="gallery-thumb">
+                        <img src="../stores/thumb-3.jpg" class="gallery-thumb">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Tab -->
+        <section class="content-section" id="products">
+            <div class="products-grid">
+                <!-- Product Cards -->
+                <article class="product-card">
+                    <img src="../products/mens-jacket.jpg" alt="Men's Jacket" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Denim Jacket</h3>
+                        <div class="product-pricing">
+                            <span class="price-now">Ksh 4,500</span>
+                            <span class="price-before">Ksh 6,000</span>
+                        </div>
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </article>
+                <!-- More product cards -->
+            </div>
+        </section>
+
+        <!-- Reviews Tab -->
+        <section class="content-section" id="reviews">
+            <div class="review-form">
+                <h3>Share Your Experience</h3>
+                <form action="#" method="post">
+                    <div class="rating-stars">
+                        <!-- Star rating input -->
+                    </div>
+                    <textarea placeholder="Write your review..." class="review-text"></textarea>
+                    <button type="submit" class="submit-review">Post Review</button>
+                </form>
+            </div>
+            <div class="review-list">
+                <!-- Existing reviews -->
+            </div>
+        </section>
+
+        <!-- Location Tab -->
+        <section class="content-section" id="location">
+            <div class="location-wrapper">
+                <div class="mall-map">
+                    <!-- Interactive map placeholder -->
+                    <div class="map-placeholder"></div>
+                </div>
+                <div class="direction-info">
+                    <h3>Getting Here</h3>
+                    <ul class="direction-steps">
+                        <li>Nearest Parking: Zone C</li>
+                        <li>Escalators: North & South Wings</li>
+                        <li>Landmark: Next to Coffee Haven</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Store Footer CTA -->
+    <div class="store-cta">
+        <div class="cta-buttons">
+            <button class="cta-btn contact-cta">Contact Store</button>
+            <button class="cta-btn direction-cta">Get Directions</button>
+            <button class="cta-btn website-cta">Visit Website</button>
+        </div>
+    </div>
+
+    <!-- Same footer as shop.html -->
+    
+    <script src="../javascript/shop-details.js"></script>
+</body>
+</html>

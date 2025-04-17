@@ -66,10 +66,9 @@ function displayCart() {
       const cartItem = event.target.closest('.cart-item');
       const productId = cartItem.dataset.productId;
 
-      // Remove the item from the DOM and from storage
-      cartItem.remove();
       removeFromCart(productId);
-      updateSummary(); // Recalculate the summary after removal
+      displayCart(); // Re-render entire cart
+      updateSummary();
     });
   });
 
@@ -105,8 +104,8 @@ function updateSummary() {
     return;
   }
 
-  // Calculate shipping
-  let shippingCost = 300;
+  // Calculate shipping with critical fix: initialize shippingCost to 0
+  let shippingCost = 0;
   const selectedDeliveryOption = document.querySelector('input[name="delivery-option"]:checked');
   if (selectedDeliveryOption) {
     shippingCost = parseFloat(selectedDeliveryOption.value);
