@@ -19,5 +19,29 @@ export function setupScroll() {
   });
 }
 
-// Run it automatically
-setupScroll();
+export function setupMobileMenu() {
+  const menuToggle = document.getElementById('menu-toggle');
+  const mainNav = document.getElementById('main-nav');
+  const body = document.body;
+
+  if (!menuToggle || !mainNav) {
+      console.error("Mobile menu elements not found!");
+      return;
+  }
+
+  menuToggle.addEventListener('click', function() {
+      mainNav.classList.toggle('active');
+      body.classList.toggle('menu-open');
+      menuToggle.classList.toggle('active');
+  });
+
+  // Close menu when clicking on a nav link
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+          mainNav.classList.remove('active');
+          body.classList.remove('menu-open');
+          menuToggle.classList.remove('active');
+      });
+  });
+}

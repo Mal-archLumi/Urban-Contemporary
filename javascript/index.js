@@ -6,9 +6,41 @@ import { cart, addToCart, updateCartQuantity } from './cart.js';
 import './headers/headers.js';
 
 const productsContainer = document.querySelector('.all-products-container');
+const menuToggle = document.querySelector('.menu-toggle');
+const mainNav = document.querySelector('.main-nav');
+
+// Toggle mobile menu
+if (menuToggle) {
+  menuToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('active');
+  });
+
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (event) => {
+    if (!mainNav.contains(event.target) && !menuToggle.contains(event.target) && mainNav.classList.contains('active')) {
+      mainNav.classList.remove('active');
+    }
+  });
+}
+
+// Function to handle scroll buttons
+const scrollContainer = document.querySelector('.scroll-container');
+const leftBtn = document.querySelector('.left-btn');
+const rightBtn = document.querySelector('.right-btn');
+
+if (scrollContainer && leftBtn && rightBtn) {
+  leftBtn.addEventListener('click', () => {
+    scrollContainer.scrollBy({ left: -200, behavior: 'smooth' });
+  });
+
+  rightBtn.addEventListener('click', () => {
+    scrollContainer.scrollBy({ left: 200, behavior: 'smooth' });
+  });
+}
 
 // Function to render products
 function renderProducts() { 
+  if (!productsContainer) return;
 
   products.forEach((product) => {
     const newProduct = `
@@ -49,23 +81,48 @@ function renderProducts() {
     productsContainer.insertAdjacentHTML('beforeend', newProduct);
   });
 
+  // Add cart notification functionality
   document.querySelectorAll('.add-to-cart-js').forEach((button) => {
     button.addEventListener('click', () => {
       const productId = button.dataset.productId;
-      const quantitySelector = button.closest('.cart-actions').querySelector('.quantity-selector');
+      const productContainer = button.closest('.product-container');
+      const quantitySelector = productContainer.querySelector('.quantity-selector');
       const quantity = parseInt(quantitySelector.value, 10);
+      const notification = productContainer.querySelector('.show-added-to-cart-js');
 
       addToCart(productId, quantity);
       updateCartQuantity();
+
+      // Show added to cart notification
+      notification.textContent = `${quantity} item(s) added to cart!`;
+      notification.classList.add('active');
+      
+      setTimeout(() => {
+        notification.classList.remove('active');
+      }, 2000);
     });
   });
 
   console.log('cart:', cart);
 }
 
-// Render products when the page loads
-renderProducts();
+// Initialize when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+  renderProducts();
+  updateCartQuantity();
+});
 
-document.getElementById('login-select').addEventListener('change', function() {
-  window.location.href = this.value;
+// Handle login selector if it exists
+const loginSelect = document.getElementById('login-select');
+if (loginSelect) {
+  loginSelect.addEventListener('change', function() {
+    window.location.href = this.value;
+  });
+}
+
+// For better performance on mobile
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768 && mainNav && mainNav.classList.contains('active')) {
+    mainNav.classList.remove('active');
+  }
 });

@@ -5,103 +5,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Urban contemporary</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="../css/index.css">
-<link rel="stylesheet" href="../css/products.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/products.css">
 </head>
 <body>
   <!-- Main Header -->
-<header class="header">
-  <div class="header-content">
-    <div class="header-left">
-      <img class="logo" src="../icons/3-company-logo__1_-removebg-preview.png" alt="Company Logo">
-    </div>
-    
-    <div class="search-section">
-      <input type="search" class="search-bar" placeholder="Search" aria-label="Search products">
-      <button type="button" class="search-btn" aria-label="Search">
-        <img src="../icons/—Pngtree—vector search icon_3783210.png" alt="" class="search-icon">
-      </button>
-    </div>
+  <header class="header">
+    <div class="header-content">
+      <div class="header-left">
+        <img class="logo" src="../icons/3-company-logo__1_-removebg-preview.png" alt="Company Logo">
+      </div>
+      
+      <div class="search-section">
+        <input type="search" class="search-bar" placeholder="Search" aria-label="Search products">
+        <button type="button" class="search-btn" aria-label="Search">
+          <img src="../icons/—Pngtree—vector search icon_3783210.png" alt="" class="search-icon">
+        </button>
+      </div>
 
-    <nav class="main-nav">
-      <ul class="nav-list">
-        <li><a href="html/shop.html" class="nav-link">Shops</a></li>
-        <li><a href="/html/blog.html" class="nav-link">Blog</a></li>
-        <li><a href="html/about.html" class="nav-link">About</a></li>
-        <li><a href="html/contact.html" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="html/shop.html" class="nav-link">Shops</a></li>
+          <li><a href="/html/blog.html" class="nav-link">Blog</a></li>
+          <li><a href="html/about.html" class="nav-link">About</a></li>
+          <li><a href="html/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
 
-<!-- Mini Header -->
-<div class="mini-header">
-  <div class="mini-header-content">
-    <button class="scroll-btn left-btn" aria-label="Scroll left">&lt;</button>
-    
-    <div class="scroll-wrapper">
-      <div class="scroll-container" aria-label="Product categories">
-        <div class="scroll-content">
-          <a href="#" class="scroll-item">Mens Shoes</a>
-          <a href="#" class="scroll-item">Cargo pants</a>
-          <a href="#" class="scroll-item">Electronics</a>
-          <a href="#" class="scroll-item">Sound systems</a>
-          <a href="#" class="scroll-item">Bicycles</a>
-          <a href="#" class="scroll-item">TVs</a>
-          <a href="#" class="scroll-item">Laptops</a>
-          <a href="#" class="scroll-item">Musical instruments</a>
-          <a href="#" class="scroll-item">Sporting goods</a>
-          <a href="#" class="scroll-item">Home deco</a>
-          <a href="#" class="scroll-item">Office</a>
+  <!-- Mini Header -->
+  <div class="mini-header">
+    <div class="mini-header-content">
+      <button class="scroll-btn left-btn" aria-label="Scroll left">&lt;</button>
+      
+      <div class="scroll-wrapper">
+        <div class="scroll-container" aria-label="Product categories">
+          <div class="scroll-content">
+            <a href="#" class="scroll-item">Mens Shoes</a>
+            <a href="#" class="scroll-item">Cargo pants</a>
+            <a href="#" class="scroll-item">Electronics</a>
+            <a href="#" class="scroll-item">Sound systems</a>
+            <a href="#" class="scroll-item">Bicycles</a>
+            <a href="#" class="scroll-item">TVs</a>
+            <a href="#" class="scroll-item">Laptops</a>
+            <a href="#" class="scroll-item">Musical instruments</a>
+            <a href="#" class="scroll-item">Sporting goods</a>
+            <a href="#" class="scroll-item">Home deco</a>
+            <a href="#" class="scroll-item">Office</a>
+          </div>
         </div>
       </div>
-    </div>
-    
-    <button class="scroll-btn right-btn" aria-label="Scroll right">&gt;</button>
+      
+      <button class="scroll-btn right-btn" aria-label="Scroll right">&gt;</button>
 
-    <div class="header-utils">
-      <a href="html/Checkout.html">
-      <button class="icon-btn icon-btn-1" aria-label="Cart">
-        <img src="../icons/shopping-cart-no-background.png" alt="" class="util-icon">
-        <div class="cart-quantity-display-js cart-quantity-display-css"></div>
-      </button>
-    </a>
-      
-      <button class="icon-btn" aria-label="Orders">
-        <img src="../icons/orders.png" alt="" class="util-icon">
-      </button>
-      
-      <button class="signup-btn" onclick="window.location.href='html/sign-up.html'">
-        Sign Up
-      </button>
+      <div class="header-utils">
+        <a href="html/Checkout.html" class="cart-link">
+          <button class="icon-btn icon-btn-1" aria-label="Cart">
+            <img src="../icons/shopping-cart-no-background.png" alt="" class="util-icon">
+            <div class="cart-quantity-display-js cart-quantity-display-css"></div>
+          </button>
+        </a>
+        
+        <button class="icon-btn" aria-label="Orders">
+          <img src="../icons/orders.png" alt="" class="util-icon">
+        </button>
+        
+        <button class="signup-btn" onclick="window.location.href='html/sign-up.html'">
+          Sign Up
+        </button>
       </div>
     </div>
   </div>
 
- <!--The products section starts here -->
+  <!--The products section starts here -->
   <div class="main-container">
     <div class="all-products-container">
+      <!-- Products will be dynamically inserted here -->
     </div>
-    
   </div>
 
   <footer>
     <div class="newsletter-container">
       <div class="newsletter-text">
-        <h2>Sign up for our Newsletter !</h2>
+        <h2>Sign up for our Newsletter!</h2>
         <p>Get E-mail updates about our latest shop and special offers.</p>
       </div>
       <div class="newsletter-form">
-          <input type="email" class="email-input" placeholder="Your Email Address" required>
-          <button type="submit" class="signup-button">Sign up</button>
-       </div>
+        <input type="email" class="email-input" placeholder="Your Email Address" required>
+        <button type="submit" class="signup-button">Sign up</button>
+      </div>
     </div>
+  </footer>
 
-</footer>
-
-<script type="module" src="../javascript/index.js"></script>
+  <script type="module">
+    import { setupScroll, setupMobileMenu } from '../javascript/headers.js';
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      setupScroll();
+      setupMobileMenu();
+    });
+  </script>
+  <script type="module" src="../javascript/index.js"></script>
 </body>
 </html>
